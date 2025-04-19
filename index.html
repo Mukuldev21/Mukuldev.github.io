@@ -230,7 +230,7 @@
         /* Projects Section */
         .projects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(2, 1fr); /* Always two columns */
             gap: 2rem;
         }
         
@@ -569,7 +569,7 @@
         <div class="container header-content">
             <div class="profile">
                 <div class="profile-image">
-                    <img src="myphoto.png" alt="Mukul Dev Mahato">
+                    <img src="/api/placeholder/150/150" alt="Mukul Dev Mahato">
                 </div>
                 <div class="profile-info">
                     <h1>Mukul Dev Mahato</h1>
@@ -756,11 +756,40 @@
                             <span class="tech-tag">Playwright</span>
                             <span class="tech-tag">TestNG</span>
                             <span class="tech-tag">Git</span>
+                            <span class="tech-tag">Maven</span>
+                            <span class="tech-tag">Page Object Model</span>
                             <span class="tech-tag">Allure Reports</span>
                             <span class="tech-tag">Jenkins</span>
+                            <span class="tech-tag">CI/CD</span>
                         </div>
                         <div class="project-links">
                             <a href="https://github.com/Mukuldev21/SauceDemo-Playwright-Solution" target="_blank" class="project-btn primary-btn">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                            <a href="#" class="project-btn secondary-btn">
+                                <i class="fas fa-info-circle"></i> Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- New SauceDemo TypeScript Project -->
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #0284c7, #38bdf8);">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>Saucedemo-Playwright-TS-Solution</h3>
+                        <p>A modern TypeScript-based Playwright framework with Page Object Model design pattern for efficient and upto 80% faster testing.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Playwright</span>
+                            <span class="tech-tag">Page Object Model</span>
+                            <span class="tech-tag">GitHub Actions</span>
+                            <span class="tech-tag">CI/CD</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Mukuldev21/Saucedemo-Playwright-TS-Solution.git" target="_blank" class="project-btn primary-btn">
                                 <i class="fab fa-github"></i> View Code
                             </a>
                             <a href="#" class="project-btn secondary-btn">
@@ -827,26 +856,32 @@
                         <i class="fab fa-linkedin"></i>
                     </div>
                     <h3>LinkedIn</h3>
-                    <a href="https://linkedin.com/in/mukul-dev-a02108198" target="_blank">Mukul Dev Mahato</a>
+                    <a href="https://linkedin.com/in/
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <h3>LinkedIn</h3>
+                        <a href="https://linkedin.com/in/mukul-dev-a02108198" target="_blank">Mukul Dev Mahato</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-links">
-                    <a href="#about">About</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#experience">Experience</a>
-                    <a href="#contact">Contact</a>
+        </section>
+        
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-links">
+                        <a href="#about">About</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#experience">Experience</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                    <p class="footer-text">&copy; 2025 Mukul Dev Mahato. All rights reserved.</p>
                 </div>
-                <p class="footer-text">&copy; 2025 Mukul Dev Mahato. All rights reserved.</p>
             </div>
-        </div>
-    </footer>
-</body>
-</html>
+        </footer>
+    </body>
+    </html>
