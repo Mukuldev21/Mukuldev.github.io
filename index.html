@@ -30,36 +30,6 @@
             color: var(--dark-color);
             line-height: 1.6;
         }
-
-        /* Dark mode styles */
-        body.dark-mode {
-            background-color: var(--dark-color);
-            color: var(--light-color);
-        }
-
-        body.dark-mode a {
-            color: var(--secondary-color); /* Adjust link color for dark mode */
-        }
-
-        /* Style for the mode toggle button */
-        #mode-toggle {
-            background-color: var(--primary-color);
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1rem;
-            transition: background-color 0.3s ease;
-        }
-
-        #mode-toggle:hover {
-            background-color: var(--secondary-color);
-        }
-
-        body.dark-mode #mode-toggle {
-            background-color: var(--secondary-color); /* Different color in dark mode */
-        }
         
         .container {
             max-width: 1200px;
@@ -95,7 +65,6 @@
             justify-content: space-between;
             align-items: center;
         }
-
         
         .profile {
             display: flex;
@@ -156,15 +125,6 @@
             transform: translateY(-3px);
         }
         
-        /* Dark mode adjustments for header */
-        body.dark-mode header {
-            background: linear-gradient(135deg, #1e3a8a, #3b0764); /* Darker gradient */
-        }
-
-        body.dark-mode .contact-links a {
-            background: rgba(0, 0, 0, 0.3); /* Darker background for icons */
-        }
-
         /* Navigation */
         nav {
             background: white;
@@ -191,11 +151,6 @@
         }
         
         .nav-links a:hover {
-            color: var(--primary-color);
-            background: rgba(79, 70, 229, 0.1);
-        }
-
-        body.dark-mode .nav-links a {
             color: var(--primary-color);
             background: rgba(79, 70, 229, 0.1);
         }
@@ -230,10 +185,6 @@
             background: var(--primary-color);
         }
         
-        body.dark-mode .section-title h2 {
-            color: var(--light-color);
-        }
-
         /* About Section */
         .about-content {
             display: grid;
@@ -262,11 +213,6 @@
             color: var(--dark-color);
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
             transition: all 0.3s ease;
-        }
-
-        body.dark-mode .skill-tag {
-            background: var(--dark-color);
-            color: var(--light-color);
             display: flex;
             align-items: center;
             gap: 0.5rem;
@@ -281,14 +227,11 @@
             color: var(--primary-color);
         }
         
-        body.dark-mode .skill-tag i {
-            color: var(--secondary-color);
-        }
-
         /* Projects Section */
         .projects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+            /*grid-template-columns: repeat(2, 1fr); /* Always two columns */
+            grid-template-columns: repeat(auto-fit, minmax(380px, 2fr));
             gap: 2rem;
         }
         
@@ -297,11 +240,6 @@
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-        }
-
-        body.dark-mode .project-card {
-            background: var(--dark-color); /* Darker background for cards */
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
             transition: all 0.3s ease;
         }
         
@@ -330,10 +268,6 @@
             color: var(--dark-color);
         }
         
-        body.dark-mode .project-info h3 {
-            color: var(--light-color);
-        }
-
         .project-info p {
             color: var(--gray-color);
             margin-bottom: 1rem;
@@ -349,11 +283,6 @@
         .tech-tag {
             background: #f1f5f9;
             padding: 0.3rem 0.8rem;
-        }
-
-        body.dark-mode .tech-tag {
-            background: var(--gray-color); /* Darker background for tech tags */
-            color: var(--light-color);
             border-radius: 20px;
             font-size: 0.8rem;
             color: var(--gray-color);
@@ -433,10 +362,6 @@
             border: 4px solid var(--primary-color);
             border-radius: 50%;
             top: 0;
-        }
-
-        body.dark-mode .timeline::after {
-            background-color: var(--gray-color); /* Darker timeline line */
             z-index: 1;
         }
         
@@ -455,11 +380,6 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
             position: relative;
         }
-
-        body.dark-mode .timeline-content {
-            background: var(--dark-color); /* Darker timeline content background */
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-        }
         
         .timeline-content::after {
             content: '';
@@ -468,22 +388,12 @@
             border-style: solid;
             top: 0;
         }
-
+        
         .timeline-item:nth-child(odd) .timeline-content::after {
             border-color: transparent transparent transparent white;
             right: -20px;
         }
-
-        body.dark-mode .timeline-item:nth-child(odd) .timeline-content::after {
-            border-color: transparent transparent transparent var(--dark-color); /* Darker border */
-        }
-
-
-        body.dark-mode .timeline-item:nth-child(even) .timeline-content::after {
-            border-color: transparent var(--dark-color) transparent transparent; /* Darker border */
-        }
-
-
+        
         .timeline-item:nth-child(even) .timeline-content::after {
             border-color: transparent white transparent transparent;
             left: -20px;
@@ -504,10 +414,6 @@
             color: var(--dark-color);
         }
         
-        body.dark-mode .timeline-content h3 {
-            color: var(--light-color);
-        }
-
         .timeline-content h4 {
             color: var(--gray-color);
             font-weight: 500;
@@ -536,11 +442,6 @@
             border-radius: 8px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
             text-align: center;
-        }
-
-        body.dark-mode .contact-card {
-            background: var(--dark-color); /* Darker contact card background */
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
             transition: all 0.3s ease;
         }
         
@@ -552,10 +453,6 @@
         .contact-icon {
             font-size: 2.5rem;
             color: var(--primary-color);
-        }
-
-        body.dark-mode .contact-icon {
-            color: var(--secondary-color); /* Adjust icon color */
             margin-bottom: 1rem;
         }
         
@@ -568,10 +465,6 @@
             color: var(--primary-color);
             text-decoration: none;
             transition: all 0.3s ease;
-        }
-
-        body.dark-mode .contact-card a {
-            color: var(--secondary-color); /* Adjust link color */
         }
         
         .contact-card a:hover {
@@ -612,299 +505,62 @@
             color: rgba(255, 255, 255, 0.6);
             font-size: 0.9rem;
         }
-
-        body.dark-mode footer {
-            background: #0f172a; /* Even darker footer in dark mode */
-        }
         
         /* Responsive */
- @media (max-width: 1200px) {
- .container {
- padding: 0 1.5rem;
- }
- }
-
- @media (max-width: 992px) {
-            .header-content {
- flex-direction: column;
- text-align: center;
- gap: 2rem;
-            }
-
- .profile {
- flex-direction: column;
- gap: 1.5rem;
- }
-
- .profile-info h1 {
- font-size: 2rem;
- }
-
- .profile-info h2 {
- font-size: 1.2rem;
- }
-
- .contact-links {
- justify-content: center;
- }
-
- .nav-links {
- flex-wrap: wrap;
- justify-content: center;
- gap: 1.5rem;
- }
-
+        @media (max-width: 992px) {
             .about-content {
                 grid-template-columns: 1fr;
- gap: 2rem;
             }
-
+            
             .timeline::after {
                 left: 40px;
             }
-
+            
             .timeline-item {
                 width: 100%;
                 padding-left: 80px;
                 padding-right: 0;
             }
-
+            
             .timeline-item:nth-child(even) {
                 left: 0;
             }
-
+            
             .timeline-item::after {
                 left: 30px;
             }
-
+            
             .timeline-item:nth-child(odd)::after {
                 right: auto;
                 left: 30px;
             }
-
+            
             .timeline-item:nth-child(even)::after {
                 left: 30px;
             }
-
+            
             .timeline-item:nth-child(odd) .timeline-content::after {
                 border-color: transparent white transparent transparent;
                 right: auto;
                 left: -20px;
             }
-
- .projects-grid {
- grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
- }
-
- .contact-cards {
- grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
- }
- }
-
-        @media (max-width: 992px) {
-            /* Existing 992px styles */
         }
-
- @media (max-width: 768px) {
-            .container {
- padding: 0 1rem;
-            }
-
+        
+        @media (max-width: 768px) {
             .header-content {
                 flex-direction: column;
                 text-align: center;
- gap: 1.5rem;
             }
-
+            
             .profile {
                 flex-direction: column;
                 gap: 1rem;
             }
-
-            .profile-image {
- width: 120px;
- height: 120px;
-            }
-
- .profile-info h1 {
- font-size: 1.8rem;
- }
-
- .profile-info h2 {
- font-size: 1.1rem;
- }
-
- .contact-links {
- justify-content: center;
- gap: 0.8rem;
- }
-
- .contact-links a {
- width: 35px;
- height: 35px;
- font-size: 1rem;
- }
-
+            
             .nav-links {
                 flex-wrap: wrap;
                 justify-content: center;
- gap: 1rem;
             }
-
- section {
- padding: 3rem 0;
- }
-
- .section-title {
- margin-bottom: 2rem;
- }
-
- .section-title h2 {
- font-size: 1.8rem;
- }
-
- .about-text p {
- font-size: 1rem;
- }
-
- .skill-tag {
- padding: 0.4rem 0.8rem;
- font-size: 0.8rem;
- }
-
- .projects-grid {
- grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
- }
-
- .project-image {
- height: 180px;
- font-size: 2.5rem;
- }
-
- .project-info {
- padding: 1rem;
- }
-
- .project-info h3 {
- font-size: 1.2rem;
- }
-
- .project-info p {
- font-size: 0.9rem;
- }
-
- .tech-tag {
- font-size: 0.7rem;
- }
-
- .project-btn {
- font-size: 0.8rem;
- padding: 0.4rem 0.8rem;
- }
-
- .timeline {
- max-width: 100%;
- }
-
-            .timeline::after {
-                left: 20px;
-            }
-
-            .timeline-item {
-                padding-left: 50px;
-            }
-
-            .timeline-item::after {
-                left: 10px;
-            }
-
-            .timeline-item:nth-child(odd)::after {
-                left: 10px;
-            }
-
-            .timeline-item:nth-child(even)::after {
-                left: 10px;
-            }
-
-            .timeline-content {
- padding: 1rem;
- }
-
-            .timeline-item:nth-child(odd) .timeline-content::after {
-                border-color: transparent white transparent transparent;
-                right: auto;
-                left: -20px; /* Adjust as needed */
-            }
-
- .timeline-date {
- font-size: 0.8rem;
- padding: 0.4rem 0.8rem;
- }
-
- .timeline-content h3 {
- font-size: 1.1rem;
- }
-
- .timeline-content h4 {
- font-size: 0.9rem;
- }
-
- .contact-cards {
- grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
- gap: 1rem;
- margin-bottom: 2rem;
- }
-
- .contact-card {
- padding: 1.5rem;
- }
-
- .contact-icon {
- font-size: 2rem;
- }
-
- .contact-card h3 {
- font-size: 1rem;
- }
-
- .footer-links {
- gap: 1rem;
- }
-
- .footer-text {
- font-size: 0.8rem;
-            }
-        }
-        
-        @media (max-width: 768px) {
-            /* Existing 768px styles */
-        }
-
- @media (max-width: 480px) {
- .profile-image {
- width: 100px;
- height: 100px;
- }
-
- .profile-info h1 {
- font-size: 1.5rem;
- }
-
- .profile-info h2 {
- font-size: 1rem;
- }
-
- .section-title h2 {
- font-size: 1.5rem;
- }
-
- .projects-grid {
- grid-template-columns: 1fr;
- }
-
- .contact-cards {
- grid-template-columns: 1fr;
- }
         }
     </style>
 </head>
@@ -928,7 +584,6 @@
                 </div>
             </div>
         </div>
- <button id="mode-toggle">Toggle Mode</button>
     </header>
     
     <!-- Navigation -->
@@ -1224,38 +879,4 @@
             </div>
         </footer>
     </body>
-    <script>
-        const modeToggle = document.getElementById('mode-toggle');
-        const body = document.body;
-
-        // Check for saved theme preference in localStorage
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme) {
-            body.classList.add(savedTheme);
-            updateButtonText(savedTheme); // Update button text on load
-        }
-
-        modeToggle.addEventListener('click', () => {
-            if (body.classList.contains('dark-mode')) {
-                // Switch to light mode
-                body.classList.remove('dark-mode');
-                localStorage.setItem('theme', 'light-mode');
- updateButtonText('light-mode'); // Update button text
-            } else {
-                // Switch to dark mode
-                body.classList.add('dark-mode');
-                localStorage.setItem('theme', 'dark-mode');
- updateButtonText('dark-mode'); // Update button text
-            }
-        });
-
-        // Function to update button text
-        function updateButtonText(currentTheme) {
-            if (currentTheme === 'dark-mode') {
-            modeToggle.textContent = 'Switch to Light Mode';
-        } else {
-            modeToggle.textContent = 'Switch to Dark Mode';
-            }
-        }
-    </script>
     </html>
